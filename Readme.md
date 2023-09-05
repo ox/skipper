@@ -1,10 +1,10 @@
 # Skipper
 
-An early prototype of a skiplist[1] data structure with persistence. Next steps here would be:
+An early prototype of a skiplist<sup>[1]</sup> data structure with persistence. Next steps here would be:
 
-  [] Add a WAL[2]
-  [] Add a text-based API like redis (ex: `SET foo bar`)
-  [] Add a TCP/HTTP/JSON API server
+- [ ] Add a WAL<sup>[2]</sup>
+- [ ] Add a text-based API like redis (ex: `SET foo bar`)
+- [ ] Add a TCP/HTTP/JSON API server
 
 Inspirations:
 
