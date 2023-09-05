@@ -1,7 +1,23 @@
 # Skipper
 
-An early prototype of a skiplist<sup>[1]</sup> data structure with persistence. Next steps here would be:
+An early prototype of a skiplist<sup>[1]</sup> data structure with persistence. It's effectively a key-value store where the keys are strings and the values are bytes. 
 
+## Usage
+
+```go
+
+s := skiplist.New()
+s.Set("hello", []byte("world"))
+
+if val, ok := s.Get("hello"); ok {
+  fmt.Printf("hello=%s", string(val))
+}
+
+```
+
+# Roadmap
+
+- [ ] Improve file format to add version, metadata, and data size prefixes
 - [ ] Add a WAL<sup>[2]</sup>
 - [ ] Add a text-based API like redis (ex: `SET foo bar`)
 - [ ] Add a TCP/HTTP/JSON API server
