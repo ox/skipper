@@ -6,7 +6,7 @@ An early prototype of a skiplist<sup>[1]</sup> data structure with persistence. 
 
 ```go
 
-s := skiplist.New()
+s := skipper.New()
 s.Set("hello", []byte("world"))
 
 if val, ok := s.Get("hello"); ok {
